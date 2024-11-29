@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariano Ignacio Perez | Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#4F46E5',
+                        'secondary': '#10B981',
+                        'accent': '#8B5CF6',
+                        'background': '#F3F4F6'
+                    },
+                    animation: {
+                        'gradient': 'gradient 15s ease infinite',
+                    },
+                    keyframes: {
+                        gradient: {
+                            '0%, 100%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'left center'
+                            },
+                            '50%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'right center'
+                            },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(-45deg, #4F46E5, #8B5CF6, #10B981, #3B82F6);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .card {
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            background-color: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(209, 213, 219, 0.3);
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen font-sans leading-normal tracking-normal">
+    <div class="container mx-auto px-4 max-w-4xl py-8">
+        <!-- Header -->
+        <header class="text-center py-16" data-aos="fade-down">
+            <div class="relative inline-block mb-6 group">
+                <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-primary to-accent blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                <img src="profile.jpg" alt="Mariano Ignacio Perez" 
+                     class="relative w-48 h-48 rounded-full mx-auto object-cover shadow-xl border-4 border-white">
+            </div>
+            <h1 class="text-5xl font-bold text-white mb-4 text-shadow">Mariano Ignacio Perez</h1>
+            <p class="text-2xl text-white/90" id="professional-title">
+                BI Analyst at Baufest | Data Engineer
+            </p>
+        </header>
+
+        <!-- About Section -->
+        <section class="card rounded-xl p-8 mb-8 shadow-xl" data-aos="fade-up">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                <i class="fas fa-user-circle text-primary mr-3"></i>About Me
+            </h2>
+            <p class="text-gray-600 mb-4" id="about-description">
+                I'm a 24-year-old professional with a Bachelor's Degree in Management Information Systems from the University of Buenos Aires. 
+                Currently working as a BI Analyst at Baufest, I specialize in developing and supporting data-driven solutions.
+                With a C1 level in English, I'm passionate about transforming complex data into actionable insights.
+            </p>
+            <p class="text-gray-600" id="interests">
+                I'm interested in roles related to BI Consulting, ETL Development, Data Engineering, Data Analysis, and Data Governance. 
+                Open to remote work and relocation opportunities.
+            </p>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="card rounded-xl p-8 mb-8 shadow-xl" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
+                <i class="fas fa-briefcase text-primary mr-3"></i>Professional Experience
+            </h2>
+            
+            <!-- Current Role -->
+            <div class="mb-8 relative pl-6 border-l-2 border-primary">
+                <div class="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1"></div>
+                <h3 class="text-xl font-semibold text-gray-700">BI Analyst at Baufest</h3>
+                <p class="text-gray-500 mb-3">September 2023 - Present</p>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Develop and support reporting solutions using Tableau and Snowflake</li>
+                    <li>Build interactive dashboards and visualizations</li>
+                    <li>Provide data-driven insights for key stakeholders</li>
+                    <li>Write and optimize SQL queries for data extraction</li>
+                </ul>
+            </div>
+
+            <!-- Previous Roles with Timeline -->
+            <div class="mb-8 relative pl-6 border-l-2 border-primary">
+                <div class="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1"></div>
+                <h3 class="text-xl font-semibold text-gray-700">Data Engineer Jr at COA Tecnología</h3>
+                <p class="text-gray-500 mb-3">November 2022 - September 2023</p>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Managed Data Warehouse for Banking Entities using SAP Data Services</li>
+                    <li>Developed ETL Jobs and managed databases with MS SQL Server and Netezza</li>
+                </ul>
+            </div>
+
+            <div class="mb-8 relative pl-6 border-l-2 border-primary">
+                <div class="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1"></div>
+                <h3 class="text-xl font-semibold text-gray-700">Data Engineer Jr at ERGO</h3>
+                <p class="text-gray-500 mb-3">January 2022 - October 2022</p>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Led DataWarehouse Construction Project for Techint using SAP Data Services</li>
+                    <li>Developed and optimized ETL jobs using SAP Data Services and SQL Server</li>
+                    <li>Implemented Agile methodologies (Scrum, Kanban) for project management</li>
+                    <li>Improved query and job performance through optimization techniques</li>
+                </ul>
+            </div>
+
+            <div class="relative pl-6 border-l-2 border-primary">
+                <div class="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1"></div>
+                <h3 class="text-xl font-semibold text-gray-700">Data Analyst - ETL Developer Trainee at ERGO</h3>
+                <p class="text-gray-500 mb-3">June 2021 - December 2021</p>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Trained in BI, Data Warehouse, and Database concepts</li>
+                    <li>Worked on SAP job migration project in DataStage for Tenaris</li>
+                    <li>Configured BAPI and ABAP job parameters in Datastage Designer</li>
+                    <li>Managed migration from Datastage 9 to Datastage 11</li>
+                    <li>Performed troubleshooting and monitoring of job runs</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="card rounded-xl p-8 mb-8 shadow-xl" data-aos="fade-up" data-aos-delay="200">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                <i class="fas fa-code text-primary mr-3"></i>Technical Skills
+            </h2>
+            <div class="flex flex-wrap gap-3" id="skills-container">
+                <span class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-full text-sm shadow-md hover:shadow-lg transition-all duration-300">SQL</span>
+                <span class="bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full text-sm shadow-md hover:shadow-lg transition-all duration-300">Tableau</span>
+                <span class="bg-gradient-to-r from-purple-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm shadow-md hover:shadow-lg transition-all duration-300">SAP Data Services</span>
+                <span class="bg-gradient-to-r from-red-500 to-red-600 text-white px-4 py-2 rounded-full text-sm shadow-md hover:shadow-lg transition-all duration-300">Google Cloud Platform</span>
+                <span class="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-4 py-2 rounded-full text-sm shadow-md hover:shadow-lg transition-all duration-300">Python</span>
+                <span class="bg-gradient-to-r from-indigo-500 to-indigo-600 text-white px-4 py-2 rounded-full text-sm shadow-md hover:shadow-lg transition-all duration-300">Power BI</span>
+                <span class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full text-sm shadow-md hover:shadow-lg transition-all duration-300">Snowflake</span>
+                <span class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-full text-sm shadow-md hover:shadow-lg transition-all duration-300">ETL Development</span>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="card rounded-xl p-8 shadow-xl" data-aos="fade-up" data-aos-delay="300">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
+                <i class="fas fa-envelope text-primary mr-3"></i>Contact
+            </h2>
+            <div class="flex flex-col items-center space-y-4">
+                <a href="tel:+541126483015" class="group flex items-center space-x-3 text-gray-600 hover:text-primary transition-colors duration-300">
+                    <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                        <i class="fas fa-phone text-primary"></i>
+                    </div>
+                    <span>+54 11 2648-3015</span>
+                </a>
+                <a href="mailto:perezmariano2012@gmail.com" class="group flex items-center space-x-3 text-gray-600 hover:text-primary transition-colors duration-300">
+                    <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                        <i class="fas fa-envelope text-primary"></i>
+                    </div>
+                    <span>perezmariano2012@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/mariano-ignacio-perez" target="_blank" class="group flex items-center space-x-3 text-gray-600 hover:text-primary transition-colors duration-300">
+                    <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                        <i class="fab fa-linkedin text-primary"></i>
+                    </div>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/MarianoPerez99/Proyectos-personales" target="_blank" class="group flex items-center space-x-3 text-gray-600 hover:text-primary transition-colors duration-300">
+                    <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                        <i class="fab fa-github text-primary"></i>
+                    </div>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center py-6 text-white/80">
+            &copy; 2024 Mariano Ignacio Perez. All rights reserved.
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
